@@ -26,7 +26,10 @@ namespace Program
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            listBox1.Items.Add(russian[random.Next(russian.Length)]);
+            if(radioButton1.Checked)
+                listBox1.Items.Add(russian[random.Next(russian.Length)]);
+            if(radioButton2.Checked)
+                listBox1.Items.Add(english[random.Next(english.Length)]);
             seconds += 1;
             label1.Text = "Время: " + (seconds / 2).ToString();
             if (listBox1.Items.Count >= 30)
@@ -50,6 +53,7 @@ namespace Program
             MessageBox.Show("Игра закончена\nВаш счёт равен " + score.ToString());
             score = 0;
             seconds = 0;
+            listBox1.Items.Clear();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

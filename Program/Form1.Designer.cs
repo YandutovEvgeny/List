@@ -32,14 +32,14 @@ namespace Program
             this.components = new System.ComponentModel.Container();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,6 +65,30 @@ namespace Program
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(147, 382);
             this.panel1.TabIndex = 1;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioButton2.Location = new System.Drawing.Point(0, 95);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(147, 19);
+            this.radioButton2.TabIndex = 5;
+            this.radioButton2.Text = "Английский";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
+            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.radioButton1.Location = new System.Drawing.Point(0, 76);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(147, 19);
+            this.radioButton1.TabIndex = 4;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "Русский";
+            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -123,30 +147,6 @@ namespace Program
             // 
             this.timer1.Interval = 500;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radioButton1.Location = new System.Drawing.Point(0, 76);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(147, 19);
-            this.radioButton1.TabIndex = 4;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Русский";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.radioButton2.Location = new System.Drawing.Point(0, 95);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(147, 19);
-            this.radioButton2.TabIndex = 5;
-            this.radioButton2.Text = "Английский";
-            this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
